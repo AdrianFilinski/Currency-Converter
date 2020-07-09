@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link href="style.css" rel="stylesheet">
+    <link href="converter.css" rel="stylesheet">
+    <link href="container.css" rel="stylesheet">
+    <script defer src="converter.js"></script>
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="container--header">Kalkulator walutowy</header>
+        <form class="form js-form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Wymiana waluty</legend>
+                <p class="form__paragraph">
+                    <span class="form__span">Wpisz kwotę</span>
+                    <label>
+                        <input class="form__input js-amount" type="number" required placeholder="Kwota w zł" min="1"
+                            max="100000">
+                    </label>
+                    <label class="form__money">
+                        <span class="form__money--span"> Wybierz walutę
+                        <select class="form__money--select js-selectForm" name="CurrencyWant">
+                            <option value="USD" class="dolar--js">USD</option>
+                            <option value="EUR" class="euro--js">EUR</option>
+                            <option value="GBP" class="funt--js">GBP</option>
+                        </select>
+                        </span>
+                    </label>
+                </p>
+                <button class="form__button js-submitButton">Przelicz</button>
+            </fieldset>
+        </form>
+        <p class="form__result js-result">
+        </p>
+    </div>
+</body>
+
+</html>

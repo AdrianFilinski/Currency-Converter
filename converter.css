@@ -1,0 +1,49 @@
+.form {
+    margin: auto;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.form__fieldset {
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+    color: rgb(192, 170, 46);
+    background-color: rgb(77, 74, 73);
+    border: 2px solid white;
+}
+
+.form__legend {
+    font-size: 25px;
+    border: 2px solid rgb(138, 127, 30);
+    color: rgb(192, 170, 46);
+    background-color: rgb(77, 74, 73);
+    margin: 5px;
+    padding: 5px;
+}
+
+.form__paragraph {
+    margin: 30px;
+}
+
+.form__button {
+    display: inline;
+}
+
+.form__button:hover {
+    background-color: cadetblue;
+}
+
+.form__money--span {
+    padding: 10px;
+    width: 100%;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.form__money--select {
+    display: inline;
+    margin: auto;
+    max-width: 150px;
+}
